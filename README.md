@@ -24,7 +24,11 @@ src_ip, URI, timestamp,  sent_bytes, received_bytes, speed (bytes/sec)
 За формирование страници status ее графичискую часть отвечает класс HttpSeverStatusPage и TableBilder. Данные для формирования таблиц и статусов получаются из выше указанного класса HttpServerStatistics.
 
 Снимок1 Вид страници Hello
+
 Снимок2 Вид страници status
+
 Снимок3 Выполнение команды ab – c 100 – n 10000 http://somedomain/status
+
 Снимок4 Вид страници status после выполнения команды ab – c 100 – n 10000 http://somedomain/status
+
 
