@@ -30,9 +30,9 @@ import static io.netty.handler.codec.http.HttpMethod.*;
 
 
 public class HttpServerHandler extends SimpleChannelInboundHandler<Object> {
-	private static final ByteBuf HelloPage = Unpooled.copiedBuffer("<html>\n<head>\n<meta charset=\"utf-8\">\n<title>HELLO</title>\n</head>\n"
+	private final ByteBuf HelloPage = Unpooled.copiedBuffer("<html>\n<head>\n<meta charset=\"utf-8\">\n<title>HELLO</title>\n</head>\n"
 			+ "<body><h1>Hello World</h1></body></html>",CharsetUtil.UTF_8);
-	private static final ByteBuf Page404 = Unpooled.copiedBuffer("<html>\n<head>\n<meta charset=\"utf-8\">\n<title>ERROR</title>\n</head>\n"
+	private final ByteBuf Page404 = Unpooled.copiedBuffer("<html>\n<head>\n<meta charset=\"utf-8\">\n<title>ERROR</title>\n</head>\n"
 			+ "<body><h1>404 PAGE NOT FOUND</h1></body></html>",CharsetUtil.UTF_8);
     private final HttpServerStatistics serverStatistics = HttpServerStatistics.getInstance();
     private final ConnectionInfo connectionInfo;
